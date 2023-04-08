@@ -1161,6 +1161,7 @@ section .magicIcon1 .image1 {
   color: #333;
   overflow: hidden;
   border-radius: 40px;
+  transition: all 0.3s linear;
   box-shadow: 0px 4px 8px rgb(0 0 0 / 12%), 0px 24px 40px rgb(0 0 0 / 12%);
 }
 
@@ -1169,6 +1170,7 @@ section .magicIcon1 .image1 {
   font-weight: 700;
   background: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+  transition:  all 0.3s ease-in-out;
 }
 
 /* =================== */
