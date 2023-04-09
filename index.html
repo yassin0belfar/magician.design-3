@@ -8,16 +8,20 @@
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="input.css">
- 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 <body>
     
-<!-- =======================================HEADER================================== -->
+  <!-- START HEADER -->
     <div class=" header w-full bg-[#9547ff]  min-h-screen" >
-        <nav class="flex flex-col gap-5 sm:gap-5 sm:flex-col md:flex-row justify-around m-auto pt-[70px] lg:pt-[90px] items-center">
+        <nav data-aos="fade-up"  data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"   
+        class="flex flex-col gap-5 sm:gap-5 sm:flex-col md:flex-row justify-around m-auto pt-[70px] lg:pt-[90px] items-center">
             <div class="logo flex items-center gap-2">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_602_1423)">
@@ -52,12 +56,14 @@
             <div class="text-white opacity-[0.6]">Works with <ion-icon class="w-[15px] h-[15px] " name="logo-figma"></ion-icon>Figma</div>
         </div>
     </div>
-    <!-- =====================================SECTION1========================================= -->
-    <section id="section1" class="w-full bg-[#333333]  min-h-screen pb-[50px] ">
-        <h1 class="font-[700] pb-[26px] text-[36px] leading-10 pt-[125px] text-white text-center"><i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i> Wave Your Magic Wand</h1> 
+    <!-- END HEADER -->
+
+   <!-- START SECTION ONE -->
+    <section  id="section1" class="w-full bg-[#333333]  min-h-screen pb-[50px] ">
+        <h1  class="font-[700] pb-[26px] text-[36px] leading-10 pt-[125px] text-white text-center"><i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i> Wave Your Magic Wand</h1> 
         <p class="opacity-[0.6] max-w-[480px]  font-[600] text-[20px] leading-7 pb-[50px] text-white text-center mx-auto">Design with the power of AI to do everything from copywriting to generating unique icons from text. </p>
         <!-- ICONS -->
-        <div class=" flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
+        <div  class=" flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
             <div id="textIcon" class="text-white flex cursor-pointer justify-center items-center  text-[18px]   py-[12px] px-[24px]  font-[700] opacity-[0.5]"><svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.74389 0.669735C1.80273 0.674264 1.86126 0.68398 1.91871 0.698883L13.9847 3.61135C14.3632 3.70272 14.6542 4.00549 14.7306 4.38732L15.6563 9.01573C15.9675 8.96004 16.3 9.05243 16.5404 9.29291L19.0404 11.7929C19.431 12.1834 19.431 12.8166 19.0404 13.2071L13.2071 19.0405C12.8166 19.431 12.1834 19.431 11.7929 19.0405L9.29289 16.5405C9.05243 16.3 8.96003 15.9675 9.0157 15.6564L4.38724 14.7307C4.00541 14.6543 3.70264 14.3633 3.61127 13.9847L0.698802 1.9188C0.683869 1.86122 0.674143 1.80258 0.669626 1.74361C0.648108 1.46273 0.744759 1.17448 0.95958 0.959662C1.13665 0.782593 1.3636 0.685809 1.5952 0.669311C1.64446 0.665776 1.69416 0.66588 1.74389 0.669735ZM6.711 8.1253L3.4727 4.887L5.40561 12.8947L10.5046 13.9145L13.9145 10.5047L12.8947 5.40569L4.88692 3.47278L8.12519 6.71106C8.44516 6.57518 8.79714 6.50002 9.16667 6.50002C10.6394 6.50002 11.8333 7.69393 11.8333 9.16669C11.8333 10.6394 10.6394 11.8334 9.16667 11.8334C7.69391 11.8334 6.5 10.6394 6.5 9.16669C6.5 8.79719 6.57515 8.44524 6.711 8.1253ZM8.68394 8.70689C8.56997 8.8265 8.5 8.98842 8.5 9.16669C8.5 9.53488 8.79848 9.83335 9.16667 9.83335C9.53486 9.83335 9.83333 9.53488 9.83333 9.16669C9.83333 8.7985 9.53486 8.50002 9.16667 8.50002C8.98839 8.50002 8.82646 8.57 8.70684 8.68398C8.70309 8.68786 8.69929 8.69171 8.69546 8.69554C8.69164 8.69936 8.6878 8.70314 8.68394 8.70689ZM11.5319 15.7157L11.5405 15.7072L15.7071 11.5405L15.7155 11.5321L15.8333 11.4142L16.9191 12.5L12.5 16.9191L11.4142 15.8334L11.5319 15.7157Z"></path>
             </svg> Text to Icon</div>
@@ -66,10 +72,12 @@
             <div class="text-white text-[18px] transition  duration-300 ease-out  py-[12px] px-[24px]  font-[700] opacity-[0.4]"> + more</div>
         </div>
         <div class="magicIcon max-w-[720px] min-h-[480px]">
-            <img id="BIGpOPUP"  src="/magic-icon-min.gif" alt="">
+            <img  id="BIGpOPUP"  src="/magic-icon-min.gif" alt="">
         </div>
     </section>
-<!-- ===========================================SECTION2========================================= -->
+    <!-- END SECTION ONE -->
+
+<!-- START SECTION TWO -->
 <section class="w-full bg-[#edeef0]  min-h-screen pb-[50px] ">
     <h1 class="font-[900] pb-[26px] text-[36px] leading-[44px] pt-[125px] text-[#333333] text-center"><i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i> Cast Magic Spells</h1> 
     <p class="opacity-[0.6] max-w-[480px]  font-[600] text-[20px] leading-7 pb-[50px] text-[#7f8081] text-center mx-auto">Each magic spell works alongside you to expand your creativity and imagination as you design. </p>
@@ -111,15 +119,17 @@
     </div>
     <div  class="magicIcon1  max-w-[720px] min-h-[480px] relative">
         <img id="imageContainer" class="image1 opacity-[0.24] hidden md:flex" src="/figma.svg" alt="">
-        <img id="popUpimg"  class="mgiconjbg transition duration-75 ease-out" src="/magic-icon.jpg" alt="">
+        <img  id="popUpimg"  class="mgiconjbg transition duration-75 ease-out" src="/magic-icon.jpg" alt="">
     </div>
 </section>
-<!-- ==============================================SECTION3================================================= -->
+<!-- END SECTION TWO -->
+
+<!-- START SECTION THREE -->
  <section class="w-full bg-[#333333]  min-h-screen pb-[80px] ">
     <h1 class="font-[700] pb-[26px] text-[36px] leading-10 pt-[125px] text-white  text-center"><i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i> Made by Diagram</h1> 
     <p class="opacity-[0.6] max-w-[480px]  font-[600] text-[20px] leading-7 pb-[50px] text-[#7f8081] text-center mx-auto"> Be more creative with smarter design tools.</p>
       <div class="wrapper gap-10 flex flex-col md:flex-row items-center md:mx-10  justify-center">
-         <div class="Automator  sm:w-[458px] md:w-[350px]">
+         <div data-aos="fade-right"   class="Automator  sm:w-[458px] md:w-[350px]">
             <div class="flex flex-col gap-3 items-center pt-[60px] ">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.0912 2.08893C12.6382 2.28088 14.173 2.77929 15.6079 3.60772C21.3474 6.92142 23.3139 14.2605 20.0002 20C16.6865 14.2605 9.34738 12.294 3.60787 15.6077C2.17508 16.4349 0.977418 17.513 0.0383301 18.7544C0.48771 11.4411 4.86728 5.1907 11.0912 2.08893Z" fill="#FFD600"></path>
@@ -135,7 +145,7 @@
             </div>
             <img src="/automator.svg" alt="">  
         </div>
-        <div class="Prototyper sm:w-[458px] md:w-[350px]">
+        <div data-aos="fade-left" class="Prototyper sm:w-[458px] md:w-[350px]">
             <div class="flex flex-col gap-3 items-center pt-[60px] ">
               <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29.92 25.52H18.48V14.08C18.48 7.76187 23.6019 2.64 29.92 2.64C36.2382 2.64 41.36 7.76186 41.36 14.08C41.36 20.3981 36.2382 25.52 29.92 25.52Z" stroke="white" stroke-width="5.28"></path>
@@ -186,7 +196,8 @@
       </div>
     
 </section>
-<!-- =============================================== SECTION3============================================================= -->
+<!-- END SECTION THREE -->
+<!-- START SECTION FOUR -->
 <section class="w-full bg-[#7b61ff] text-white min-h-screen pb-[80px]">
   <div class="flex justify-center items-center gap-[8px] ">
     <i class="fa-solid text-[36px]  fa-tag fa-rotate-90" style="color: #ffffff;"></i> 
@@ -194,7 +205,7 @@
 
   </div>
 
-<div id="pricing" class="pricing   md:w-[400px] p-[40px]">
+<div  id="pricing" class="pricing   md:w-[400px] p-[40px]">
     <div class="publBeta flex items-center  ">
       <i class="fa-sharp fa-solid fa-sparkle"></i>
       <h1 class="font-[700] text-[#7b61ff] text-[18px] leading-6">Public beta</h1>
@@ -231,8 +242,9 @@
  <button class="py-[12px] px-[24px] text-white  bg-[#7b61ff] rounded-[48px] font-[700] text-[18px] leading-6 w-full">Start free trial</button>
 </div>
 </section>
-<!-- ==============================SECTION4==================================== -->
-<footer>
+<!-- END SECTION FOUR -->
+<!-- START FOOTER-->
+<footer ">
   <div id="overlay"></div>
   <div class="text  relative z-[1]">
     <h1 class="font-[700] pb-[26px] text-[36px] leading-10 pt-[80px] md:pt-[125px] text-white text-center">Every little thing it does is magic</h1>
@@ -243,7 +255,7 @@
   <div id="wizard"></div>
 
   <!--  -->
-  <nav class="flex relative z-40 flex-col gap-5 sm:gap-5 sm:flex-col md:flex-row justify-between px-[100px] pb-[70px]  pt-[70px] lg:pt-[90px] items-center">
+  <nav  class="flex relative z-40 flex-col gap-5 sm:gap-5 sm:flex-col md:flex-row justify-between px-[100px] pb-[70px]  pt-[70px] lg:pt-[90px] items-center">
     <div class="logo flex items-center gap-2">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_602_1423)">
@@ -263,14 +275,25 @@
           <li class="font-[600] text-[16px] leading-6 opacity-[0.6] transition duration-300 ease-out hover:opacity-[1]"><a href="#">Privacy </a></li>
       <li class=" animate__rubberBand font-[600] text-[16px] leading-6 opacity-[0.6] transition duration-300 ease-out hover:opacity-[1]"><a href="#">Terms</a></li>
    </ul>
-  
    </ul>
 </nav>
 
 <a href="#" id="scrollToTopButton" title="Scroll to Top"><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i></a>
-</footer>
 
+</footer>
+<!-- END FOOTER -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset : 400,
+    duration : 1000
+ 
+   
+  });
+</script>
 <script src="main.js"></script>
+
+
 </body>
 </html>
 

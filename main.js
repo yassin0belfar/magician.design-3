@@ -1,9 +1,3 @@
-// let nav1 = document.getElementById("nav1");
-// let open1 = document.getElementById("open1");
-// let close = document.getElementById("close");
-// open1.addEventListener("click", function() {
-// nav1.style.opacity = '1'
-// })
 // SCROLL TO TOP
 document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopButton = document.getElementById("scrollToTopButton");
